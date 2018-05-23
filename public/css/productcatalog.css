@@ -1,0 +1,91 @@
+
+.product_checks{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%
+}
+
+.product_checks td{
+	width: 33.3%;
+}
+
+.product_checks td span{
+	margin-left: 3px;
+}
+
+.product_checks td:first-child span{
+	margin-left:0px;
+}
+
+.product_checks td:last-child span{
+	margin-left:6px;
+}
+
+.product_checks td ul{
+	margin:8px 0px 16px 3px;
+}
+
+.product_checks td:first-child ul{
+	margin-left:0px;
+	
+}
+
+.product_checks td:last-child ul{
+	
+	margin-top: 0px;
+}
+
+.product_checks .checks td{
+	vertical-align: top;
+}
+
+.product_checks .checks ul{
+	height: 94px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.product_checks ul{
+	list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFF;
+   
+    border: 1px solid #E1E4EA;
+}
+
+.product_checks li{
+	background-image: url(../images/cb-unchecked.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position-y: 50%;
+    background-position-x:3%;
+    padding-left: 25px;
+    line-height: 15px;
+   
+    vertical-align: middle;
+    color: #50535B;
+    cursor: pointer;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.product_checks li.selected {
+    color: #50535B;
+    background-image: url(../images/cb-checked.png);
+    padding-left: 32px;
+    background-color: #f6f5f6;
+}
+
+
+.advanced_selection{
+	clear: both;
+}
+.pad {
+	padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.sidebar-bx-inner {
+	padding: 30px 10px 0px 10px;
+}

@@ -1,0 +1,33 @@
+var admin = admin || {};
+admin.CustomerModel = Backbone.Model.extend({
+	defaults: {
+		"customer_id" : null,
+		"user_type_id": null,
+		"cust_id" : null,
+		"cust_first_name": null,		
+		"cust_last_name" : null,
+		"cust_dob": null,
+		"cust_aadhar_number": null,
+		"cust_pan": null,
+		"cust_passport": null,
+		"cust_sex": null,
+		"cust_res_phone_number": null,
+		"cust_mobile_phone_number": null,
+		"cust_off_phone_number": null,
+		"clnt_off_email_id": null,
+		"cust_per_emai_id": null,
+		"cust_twitter_id": null,
+		"cust_facebook_id": null,
+		"cust_photo_file_name": null,
+		"cust_photo_location": null,
+		"orig_type_id": null,
+		"created_on_timestamp" : null,
+		"created_by_user_id" : null,
+		"last_update_timestamp" : null,
+		"last_update_user_id" : null,
+		"cust_father_name" : null,
+		"is_deleted" : null,
+		"cust_mother_name": null,
+	},
+	idAttribute: 'crId'
+});
