@@ -303,7 +303,7 @@ class ShoppingCartRepository
                 $tmp = json_decode($invoice,true);
                 $invoiceHeader = new InvoiceHeader;       
                 $invoiceHeader['invoice_no'] = BLAlphaNumericCodeGenerator::getCode(config('blconstants.invoice_no'));
-                $invoiceHeader['order_date'] = $orderMaster->order_date;
+              //  $invoiceHeader['order_date'] = $orderMaster->order_date;
                 $invoiceHeader['consignee_first_name'] = $tmp[0]['cust_first_name'];
                 $invoiceHeader['consignee_last_name'] = $tmp[0]['cust_last_name'];
                 $invoiceHeader['cust_id'] = $tmp[0]['customer_id'];
@@ -339,7 +339,7 @@ class ShoppingCartRepository
                     $tmp = json_decode($invoice,true);
                     $invoiceHeader = new InvoiceHeader;       
                     $invoiceHeader['invoice_no'] = BLAlphaNumericCodeGenerator::getCode(config('blconstants.invoice_no'));
-                    $invoiceHeader['order_date'] = $orderMaster->order_date;
+                //    $invoiceHeader['order_date'] = $orderMaster->order_date;
                     $invoiceHeader['consignee_first_name'] = $tmp[0]['clnt_contact_person_first_name'];
                     $invoiceHeader['consignee_last_name'] = $tmp[0]['clnt_contact_person_last_name'];
                     $invoiceHeader['clnt_id'] = $tmp[0]['client_id'];
@@ -579,7 +579,7 @@ class ShoppingCartRepository
                 $tmp = json_decode($invoice,true);
                 $invoiceHeader = new InvoiceHeader;       
                 $invoiceHeader['invoice_no'] = BLAlphaNumericCodeGenerator::getCode(config('blconstants.invoice_no'));
-                $invoiceHeader['order_date'] = $orderMaster->order_date;
+             //   $invoiceHeader['order_date'] = $orderMaster->order_date;
                 $invoiceHeader['consignee_first_name'] = $tmp[0]['cust_first_name'];
                 $invoiceHeader['consignee_last_name'] = $tmp[0]['cust_last_name'];
                 $invoiceHeader['cust_id'] = $tmp[0]['customer_id'];
@@ -616,7 +616,7 @@ class ShoppingCartRepository
                     $tmp = json_decode($invoice,true);
                     $invoiceHeader = new InvoiceHeader;       
                     $invoiceHeader['invoice_no'] = BLAlphaNumericCodeGenerator::getCode(config('blconstants.invoice_no'));
-                    $invoiceHeader['order_date'] = $orderMaster->order_date;
+                  //  $invoiceHeader['order_date'] = $orderMaster->order_date;
                     $invoiceHeader['consignee_first_name'] = $tmp[0]['clnt_contact_person_first_name'];
                     $invoiceHeader['consignee_last_name'] = $tmp[0]['clnt_contact_person_last_name'];
                     $invoiceHeader['clnt_id'] = $tmp[0]['client_id'];
