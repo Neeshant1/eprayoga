@@ -57,11 +57,12 @@ class LoginController extends Controller
                             ->where('user_login_password','=',$password) 
                             ->select('user_profile_id','user_login_id','user_id','user_type','clnt_id','clnt_group_id')
                             ->first();
+       
 
          if ($user === null || empty($user)) {
           
-            return false;
 
+            return false;
            }else{
            
             $request->session()->put('user', $user);

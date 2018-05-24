@@ -5,7 +5,7 @@ admin.ShoppingPageView = Backbone.View.extend({
 
   initialize: function(options) {
     var self = this; 
-     this.temp="<ul class='selectCatalog'></ul>";
+    this.temp="<ul class='selectCatalog'></ul>";
     this.temp1="<ul class='selectSubject'></ul>";
     this.temp2="<ul class='selectTopic'></ul>";
     this.categorycollection = new admin.CategoryCartCollection();
@@ -63,7 +63,7 @@ admin.ShoppingPageView = Backbone.View.extend({
           var price = Number(item.attributes.price);
           var perdisc = Number(item.attributes.discount);
           var tax =Number(sgst) + Number(cgst) + Number(igst) + Number(other_tax1) + Number(other_tax2) + Number(other_tax3);
-          var disprice = price * (Number(item.attributes.discount)/100);
+		  var disprice = price * (Number(item.attributes.discount)/100);
           var fiprice = price - disprice;
           var fiTax = ( tax/100) * price;
           var fiprAmt = fiTax + fiprice;

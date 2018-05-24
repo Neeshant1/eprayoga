@@ -346,13 +346,14 @@
             </div>
             <!-- Listed product show -->
             <div role="tabpanel" class="tab-pane active" id="list-view">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="product-box2">
                         <div class="media">
                             
                             <div class="media-body">
                                 <div class="product-box2-content">
                                  <h3>Product Name: <%=name%></h3>
+								 <img src="img/home image.jpg" alt="product-image" class="img-responsive">
                                     <span>Amount:Rs.<%=notdiscprice%></span>
                                     <span>Discount: <%=perdisc%>%</span>
                                     <p>Description: <%=description%></p>
