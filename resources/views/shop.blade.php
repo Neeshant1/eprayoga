@@ -572,6 +572,50 @@
         }
     });
 </script>
+
+<script>
+$(document).ready(function(){
+                $("#login-form").css("display", "none"); 
+                $('#login-button').on('click', function(){
+                    $("#userName").val('');
+                    $("#userPwd").val('');
+                    $('#clr_msg').empty();
+                     $('#clr_msg').removeClass('alert-success');
+                       
+                $('#esuccess').on('click', function(e){
+                  
+                    e.preventDefault();
+                   
+                    var userName = $('#userName').val();
+                    var userPwd = $('#userPwd').val();
+
+                    if(userName == '' || userName == undefined || userName == null){
+
+                        return false;
+                    }else if (userPwd == '' || userPwd == undefined || userPwd == null){
+                        return false;
+                    }
+                                       
+                    $.ajax({
+                        type: "POST",
+                        url: '/eprayoga/login',
+                        data: {userName:userName,userPwd:userPwd },
+                        success: function(){
+                            window.location='/';
+                        },
+                        error:function(){ 
+                            $('#login-form').css('display','inline-block');
+                            $('#login-form').css('height','407px');
+                            $('#clr_msg').addClass('alert');
+                            $('#clr_msg').addClass('alert-success');
+                            $('#clr_msg').html("Invalid Username or Password");
+                        }
+                    });
+                  });
+                });
+            });
+
+</script>
 </body>
 
 </html>
